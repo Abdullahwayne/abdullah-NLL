@@ -1,0 +1,830 @@
+$primary-color: #850037;
+
+.dugoutMain {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+
+
+}
+
+.header-timer-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.print-button {
+  border: none;
+  width: 70px;
+  height: 40px;
+  background: linear-gradient(to right, #f58f1b, #850037);
+  color: white;
+  // margin: 20px;
+  font-weight: bolder;
+}
+
+.dugoutMain::-webkit-scrollbar {
+  display: none;
+}
+
+.print-button-div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .print-button {
+    border: none;
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(to right, #f58f1b, #850037);
+    color: white;
+    margin: 20px;
+    font-weight: bold;
+  }
+}
+
+.color-pick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dugoutLineup {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  .roster-header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    .header-image-box {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      position: relative;
+
+      .small-logo-box {
+        width: 10%;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+
+        .small-logo1-input {
+          display: none;
+        }
+
+        img {
+          margin: 5px;
+          z-index: 0;
+          width: 60px;
+          height: 50px;
+        }
+      }
+
+      .large-logo-box {
+        margin: 0px;
+        padding: 0px;
+        width: 80%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 64px;
+        font-weight: bolder;
+        text-transform: uppercase;
+
+        img {
+          width: 60%;
+          height: 100%;
+        }
+      }
+
+    }
+
+
+
+
+  }
+
+  .team-div {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .team-name {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+
+      .team-name-input {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+      }
+    }
+
+    .versus {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+
+      p {
+        margin: 0px;
+        font-size: 40px;
+        font-weight: bolder;
+      }
+    }
+  }
+
+  .dugout-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+    .team-selection {
+      display: flex;
+      justify-content: flex-start;
+      width: 50%;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      .player-box {
+        border-top: 1px solid black;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 70px;
+
+        .number-box {
+          display: flex;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          width: 20%;
+          font-size: 64px;
+          font-weight: bolder;
+          margin: 0px;
+          color: $primary-color;
+          font-family: "Poppins";
+          text-align: center;
+        }
+
+        .player-detail-box {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          .player-detail-row {
+            display: flex;
+            padding-left: 10px;
+            width: 100%;
+
+            .player-name-autocomplete {
+              width: 80%;
+
+            }
+
+            .player-position-select {
+              width: 20%;
+            }
+          }
+        }
+
+
+
+      }
+    }
+
+  }
+
+  .header-timer-box {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+  }
+}
+
+
+.main-box {
+  border-bottom: 3px solid #850037;
+  border-left: 3px solid #850037;
+  border-right: 3px solid #850037;
+  display: flex;
+  width: 100%;
+  // flex-wrap: wrap;
+  justify-content: flex-start;
+  // border: 1px solid red;
+
+  .medium-box {
+    width: 100%;
+
+    .small-box {
+      width: 100%;
+      height: auto;
+
+      .small-box-header {
+        background: #850037;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        color: white;
+        font-weight: bolder;
+        letter-spacing: 2px;
+
+
+        .small-heading {
+          padding: 0px 20px;
+        }
+      }
+
+      .small-box-body {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .small-box-breaker {
+          width: 50%
+        }
+
+        .small-box-players {
+          display: flex;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
+
+// ########################################################################################################
+
+
+
+@media only screen and (max-width: 320px) and (min-width: 280px) {
+
+  #modalid {
+    width: 95% !important;
+  }
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 1440px) {
+  #modalid {
+    width: 50%;
+    display: flex;
+    height: 80%;
+    box-sizing: border-box;
+
+  }
+
+  .color-one {
+    display: flex;
+
+  }
+
+  .color-two {
+    display: flex;
+  }
+
+  .Logo {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+
+}
+
+@media only screen and (max-width: 320px) and (min-width: 280px) {
+  #modalid {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .header-mobile .mobile-logo{
+    width: 50% !important;
+  }
+  .print-button {
+    margin-left: -40px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .header-timer-box {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+
+  .content-one {
+    display: flex !important;
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+
+  }
+
+  .text-label {
+    margin-left: 0 !important;
+    width: 90% !important;
+
+  }
+
+  .text-size {
+    margin-left: 0 !important;
+    width: 90% !important;
+    gap: 0px !important;
+
+  }
+
+  .text-label {
+    gap: 0 !important;
+  }
+
+  .content-two {
+    display: flex !important;
+    // flex-direction: column !important;
+  }
+
+  .text-align-two {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-label-one {
+    // margin-left: 0 !important;
+    // width: 90% !important;
+    // display: block !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    // flex-direction: column !important;
+    gap: 0px !important;
+
+
+  }
+
+  .content-last {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0px !important;
+  }
+
+  .text-last {
+    gap: 0px !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+
+  //   #modalid{
+  //     width: 95%;
+  //   }
+  //   .print-button{
+  //     margin-left:-40px;
+  //   }
+  // }
+  .dugoutLineup .dugout-body .team-selection .player-box .number-box {
+    font-size: 15px !important;
+  }
+
+  #modalid {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .print-button {
+    margin-left: -40px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .header-timer-box {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+
+  .content-one {
+    display: flex !important;
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+
+  }
+
+  .text-label {
+    margin-left: 0 !important;
+    width: 90% !important;
+
+  }
+
+  .text-size {
+    margin-left: 0 !important;
+    width: 90% !important;
+    gap: 0px !important;
+
+  }
+
+  .text-label {
+    gap: 0 !important;
+  }
+
+  .content-two {
+    display: flex !important;
+    // flex-direction: column !important;
+  }
+
+  .text-align-two {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-label-one {
+    // margin-left: 0 !important;
+    // width: 90% !important;
+    // display: block !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    // flex-direction: column !important;
+    gap: 0px !important;
+
+
+  }
+
+  .content-last {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0px !important;
+  }
+
+  .text-last {
+    gap: 0px !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 428px) {
+  .Logo {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+  }
+  
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  .number-box {
+    font-size: 40px !important;
+    margin-left: 0px !important;
+  }
+ 
+  #modalid {
+    width: 60% !important;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .css-1nrlq1o-MuiFormControl-root {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+  }
+  .dugoutLineup .roster-header .header-image-box .small-logo-box {
+    width: 12%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 1024px) {
+ 
+  .dugoutLineup .roster-header .header-image-box .small-logo-box {
+    width: 18%;
+  }
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 1440px) {
+
+  .color-one {
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+
+  .color-two {
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 320px) {
+
+  #modalid {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .print-button {
+    margin-left: -40px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .header-timer-box {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+
+  .content-one {
+    display: flex !important;
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+
+  }
+
+  .text-label {
+    margin-left: 0 !important;
+    width: 90% !important;
+
+  }
+
+  .text-size {
+    margin-left: 0 !important;
+    width: 90% !important;
+    gap: 0px !important;
+
+  }
+
+  .text-label {
+    gap: 0 !important;
+  }
+
+  .content-two {
+    display: flex !important;
+    // flex-direction: column !important;
+  }
+
+  .text-align-two {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-label-one {
+    // margin-left: 0 !important;
+    // width: 90% !important;
+    // display: block !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    // flex-direction: column !important;
+    gap: 0px !important;
+
+
+  }
+
+  .content-last {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0px !important;
+  }
+
+  .text-last {
+    gap: 0px !important;
+    width: 100% !important;
+  }
+  .large-logo-box{
+    width:60% !important;
+  }
+  .dugoutLineup .roster-header .header-image-box .small-logo-box {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 320px) and (min-width: 280px) {
+  .dugoutLineup .dugout-body .team-selection .player-box .number-box {
+    font-size: 20px !important;
+  }
+
+  .large-logo-box {
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 320px) {
+  .dugoutLineup .dugout-body .team-selection .player-box .number-box {
+    font-size: 15px !important;
+  }
+
+  .large-logo-box {
+    font-size: 20px !important;
+  }
+
+  .number-box {
+    width:35px !important;
+  }
+  .main-box {
+    display: block !important;
+    border-right: 0px !important;
+
+  }
+
+  .dugoutLineup {
+    width: 80% !important;
+  }
+
+  .main-box .medium-box .small-box .small-box-header .small-heading {
+    padding: 0 !important;
+  }
+
+  .main-box .medium-box .small-box {
+    width: 80% !important;
+    border-right: 1px solid rgb(133, 0, 55) !important;
+  }
+
+  .print-button-div {
+    justify-content: space-around !important;
+  }
+
+  .dashboard-breaker-body-dashboard {
+    width: 100% !important;
+  }
+
+  .dugoutMain {
+    width: 95% !important;
+  }
+
+  .dugoutLineup {
+    width: 100% !important;
+  }
+
+  .main-box .medium-box .small-box {
+    width: 100% !important;
+  }
+  .number-box{
+    height: 55px !important;
+  }
+
+}
+
+@media only screen and (max-width: 428px) and (min-width: 375px) {
+  .dugoutLineup .dugout-body .team-selection .player-box .number-box {
+    font-size: 30px !important;
+    width: 43% !important;
+  }
+  .css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.MuiSelect-select {
+    text-overflow: initial !important;
+   
+  }
+  .header-mobile .mobile-logo{
+    width: 50% !important;
+  }
+  .css-1nrlq1o-MuiFormControl-root {
+    align-items: center !important;
+  }
+
+  .large-logo-box {
+    font-size: 20px !important;
+    width: 60% !important;
+  }
+
+  .main-box {
+    display: block !important;
+    border-right: 0px !important;
+
+  }
+
+  .dugoutLineup {
+    width: 80% !important;
+  }
+
+  .main-box .medium-box .small-box .small-box-header .small-heading {
+    padding: 0 !important;
+  }
+
+  .main-box .medium-box .small-box {
+    width: 80% !important;
+    border-right: 1px solid rgb(133, 0, 55) !important;
+  }
+
+  .print-button-div {
+    justify-content: space-around !important;
+  }
+
+  .dashboard-breaker-body-dashboard {
+    width: 100% !important;
+  }
+
+  .dugoutMain {
+    width: 95% !important;
+  }
+
+  .dugoutLineup {
+    width: 100% !important;
+  }
+
+  .main-box .medium-box .small-box {
+    width: 100% !important;
+  }
+  .player-detail-row{
+    font-size: large !important;
+  }
+  .dugoutLineup .roster-header .header-image-box .small-logo-box {
+    width: 21%;
+  }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 428px) {
+  .dugoutLineup .dugout-body .team-selection .player-box .number-box {
+    font-size: 50px !important;
+  }
+  .header-mobile .mobile-logo{
+    width: 30% !important;
+  }
+  .css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.MuiSelect-select {
+    text-overflow: initial !important;
+   
+  }
+ 
+  .css-1nrlq1o-MuiFormControl-root {
+    align-items: center !important;
+  }
+
+  .large-logo-box {
+    font-size: 20px !important;
+    width: 65% !important;
+  }
+
+  .main-box {
+    display: block !important;
+    border-right: 0px !important;
+
+  }
+
+  .dugoutLineup {
+    width: 80% !important;
+  }
+
+  .main-box .medium-box .small-box .small-box-header .small-heading {
+    padding: 0 !important;
+  }
+
+  .main-box .medium-box .small-box {
+    width: 80% !important;
+    border-right: 1px solid rgb(133, 0, 55) !important;
+  }
+
+  .print-button-div {
+    justify-content: space-around !important;
+  }
+
+  .dashboard-breaker-body-dashboard {
+    width: 100% !important;
+  }
+
+  .dugoutMain {
+    width: 95% !important;
+  }
+
+  .dugoutLineup {
+    width: 100% !important;
+  }
+
+  .main-box .medium-box .small-box {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 1440px) {
+
+  .large-logo-box{
+    width: 80% !important;
+  }
+  .img-dug{
+    width: 95% !important;
+  }
+}

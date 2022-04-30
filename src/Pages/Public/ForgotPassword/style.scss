@@ -1,0 +1,121 @@
+.login-page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    justify-content: center;
+    .img-div {
+      width: 50%;
+      height: 100vh;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    .content-div {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .content {
+        width: 70%;
+        p {
+          color: #707070;
+          span {
+            color: #850037;
+          }
+        }
+        .form-div {
+          .forget-password {
+            color: #850037;
+            display: flex;
+            justify-content: flex-end;
+          }
+          .text-field {
+            border: none;
+            background-color: #f5f5f5;
+            padding: 14px 0px;
+            width: 100%;
+            
+          }
+          .signIn-button {
+            width: 100%;
+            background: linear-gradient(to right, #f58f1b, #850037);
+            border: 0;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: bold;
+            line-height: 2.5;
+            outline: transparent;
+            padding: 0 1rem;
+            text-align: center;
+            text-decoration: none;
+            transition: box-shadow 0.2s ease-in-out;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 450px) and (min-width: 320px) {
+    .login-page {
+      .img-div {
+        display: none;
+      }
+      .content-div {
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+        h2 {
+          font-size: 1.2rem;
+        }
+        width: 100%;
+        .content {
+          width: 90%;
+        }
+      }
+    }
+    .login-page .content-div .content .form-div {
+      gap: 20px !important;
+  }
+  }
+  
+  
+  @media only screen and (max-width: 768px)  {
+    .login-page {
+      .img-div {
+        display: none;
+      }
+      .content-div {
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+        h2 {
+          font-size: 1.2rem;
+        }
+        width: 100%;
+        .content {
+          width: 90%;
+        }
+      }
+    }
+    .form-div{
+      gap: 20px !important;
+    }
+  }
+  
+  

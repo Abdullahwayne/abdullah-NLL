@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Raleway;
+  src: url("./Fonts/Raleway/static/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins;
+  src: url("./Fonts/Poppins/Poppins-Bold.ttf");
+}
+
+
+.App {
+  font-family: Raleway;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* *,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */

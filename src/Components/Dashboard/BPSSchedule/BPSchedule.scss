@@ -1,0 +1,189 @@
+$primary-color:#7F1D1E;
+
+.BPSchedule-main {
+  width: 95%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.BPSchedule-main::-webkit-scrollbar {
+  display: none;
+}
+
+.BPShedule-body {
+  width: 100%;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.BP-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+
+  .small-logo-box {
+    display: flex;
+    width: 10%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 20px;
+
+    img {
+      width: 60px;
+      height: 50px;
+    }
+  }
+
+  .large-logo-box {
+    width: 80%;
+    display: flex;
+    font-size: 64px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.BP-Scehdule-Timebox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.BP-heading {
+  width: 99%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 43px;
+  font-weight: bolder;
+  color: white;
+  background-color: #7F1D1E;
+}
+
+.BP-body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  .BP-box {
+    border: 1px solid;
+    width: 49%;
+
+    .box-heading {
+      background-color: #7F1D1E;
+      color: white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+      font-weight: bolder;
+    }
+
+    .box-content {
+      width: 100%;
+
+
+      .box-row {
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid black;
+
+        .row-left-side {
+          justify-content: flex-start;
+          padding-left: 20px;
+          width: 50%;
+          display: flex;
+          text-align: left;
+          align-items: center;
+          font-size: 24px;
+          font-weight: bold;
+          border-right: 1px solid;
+          font-family: "Poppins";
+        }
+
+        .row-right-side {
+          text-align: left;
+          width: 50%;
+          font-size: 30px;
+          height: 100%;
+
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 280px) {
+  .BP-heading {
+    font-size: 20px;
+  }
+  .BP-header .small-logo-box {
+    // width: 20% !important;
+  }
+  .BP-body {
+    flex-direction: column !important;
+  }
+  .BP-body .BP-box {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 375px) and (min-width: 320px) {
+  .BP-heading {
+    font-size: 20px;
+  }
+  .BP-body {
+    flex-direction: column !important;
+  }
+  .BP-body .BP-box {
+    width: 100% !important;
+  }
+  .small-logo-box {
+    width: 26% !important;
+}
+}
+@media only screen and (max-width: 428px) and (min-width: 375px) {
+  .BP-heading {
+    font-size: 20px;
+  }
+  .BP-body {
+    flex-direction: column !important;
+  }
+  .BP-body .BP-box {
+    width: 100% !important;
+  }
+  .small-logo-box {
+    width: 21% !important;
+}
+}
+@media only screen and (max-width: 2560px) and (min-width: 1440px) {
+  .img-bps{
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 768px) {
+  .small-logo-box {
+    width: 14% !important;
+}
+}
+@media only screen and (max-width: 1024px) and (min-width: 1024px) {
+  .small-logo-box {
+    width: 16% !important;
+}
+}
+@media only screen and (max-width: 2560px) and (min-width: 1440px) {
+  .small-logo-box {
+    width: 10% !important;
+}
+}

@@ -1,0 +1,193 @@
+.configuration-main {
+    width: 100%;
+    height: 100%;
+    // border: 1px solid red;
+}
+.config-blanksheet{
+    // width: 40% !important; 
+    justify-content: flex-start !important;
+    width: 70%;
+}
+.config-date-componenet{
+display: flex !important;
+    width: 50% !important;
+    justify-content: center !important;
+    flex-direction: row-reverse !important;
+}
+.config-set-color{
+    display: flex !important;
+    justify-content: center !important;
+}
+.config-color-one{
+    display: flex ;
+    // justify-content: space-around !important;
+    // gap:60px;
+    justify-content: space-evenly;
+    margin: 20px ;
+    height: 180px ;
+}
+.configuration-main{
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+.config-three-function{
+    display: flex;
+    justify-content: center;
+}
+.config-middle-content{
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% ;
+}
+.config-left-content{
+    width: 100%;
+}
+.config-right-content {
+    width : 100%;
+}
+.config-logo-enabler {
+    margin: 10px;
+}
+.config-middle-buttons{
+    margin: 10px !important;
+}
+.twitter-picker {
+    width: 170px !important;
+    transform: scale(1.2);
+    margin: 10px;
+
+}
+.small-logo1-input{
+    // height: 30px;
+    // width: 100px;
+    // background-color: beige;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
+.config-position{
+    margin:9px !important;
+}
+.config-text-set{
+    margin: 2px;
+}
+.config-mid-heading{
+    margin: -3px;
+}
+// .config-button{
+//     margin-bottom: 10px;
+// }
+.config-mid-image-pos{
+    margin: 19px;
+}
+.config-image-size{
+    margin : 4px;
+}
+@media only screen and (max-width: 320px) and (min-width: 280px) {
+    .config-name-date{
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+    .config-colors-one{
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    .config-colors-two{
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    .color-pik{
+        width: 100% !important;
+    }
+    .config-three-function{
+        flex-direction: column !important;
+    }
+    .config-color-one{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px;
+    }
+    .small-logo1-input{
+        width: 60% !important;
+    }
+}
+@media only screen and (max-width: 375px) and (min-width: 320px) {
+
+    .config-name-date{
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+    .config-colors-one{
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    .config-colors-two{
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    .color-pik{
+        width: 100% !important;
+    }
+    .config-three-function{
+        flex-direction: column !important;
+    }
+    .config-color-one{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px;
+    }
+    .small-logo1-input{
+        width: 60% !important;
+    }
+}
+@media only screen and (max-width: 428px) and (min-width: 375px) {
+
+    .config-name-date{
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+    .config-colors-one{
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    .config-colors-two{
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    .color-pik{
+        width: 100% !important;
+    }
+    .config-three-function{
+        flex-direction: column !important;
+    }
+    .config-color-one{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px;
+    }
+    .small-logo1-input{
+        width: 60% !important;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 428px) {
+    .config-three-function{
+        flex-direction: column !important;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .config-three-function{
+        flex-direction: column !important;
+    }
+    .config-color-one{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px;
+    }
+    .small-logo1-input{
+        width: 60% !important;
+    }
+}
