@@ -221,9 +221,11 @@ const UmpireLineup = (props) => {
                       margin: "0px",
                       color: configuration.headerColor,
                       overflow: "hidden",
-                      fontSize: configuration.fontSize,
-                      fontFamily:"Poppins"
+                      fontSize: configuration.fontSize - "30px",
+                      fontFamily:"Poppins",
+                      
                     }}
+                    className="p-logo"
                   >
                     {establishmentName}
                   </p>
@@ -608,7 +610,7 @@ const UmpireLineup = (props) => {
                             style={{
                              height:"100%",
                            width:"70%",
-                           fontSize: '35px',
+                           fontSize: "35px",
                             flexWrap:"wrap",
                               margin: "0px",
                               color: configuration.headerColor,
@@ -868,7 +870,7 @@ const UmpireLineup = (props) => {
                     </div>
                     <div
                       style={{
-
+                       
                         rowGap: "0px",
                         gap: "0px",
                         columnGap: "0px",
@@ -882,13 +884,13 @@ const UmpireLineup = (props) => {
                         return (
                           <div
                             style={{
-                              
-                              width: "90px",
+                              fontSize:"2px",
+                              width: "80px",
                               rowGap: "2px",
                             }}
                             className="body-item"
                           >
-                            <Typography style={{ fontSize: "9.5px",   fontFamily:"Poppins" }}>
+                            <Typography style={{ fontSize: "8px",   fontFamily:"Poppins" }}>
                               {names[key]}
                             </Typography>
                           </div>

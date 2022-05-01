@@ -245,7 +245,7 @@ const BPSchedule = () => {
                 className="img-bps"
               ></img>
             ) : (
-              <p style={{ margin: "0px", fontSize: configuration.fontSize }}>
+              <p style={{ margin: "0px", fontSize: configuration.fontSize -"20px" }}>
                 {establishmentName}
               </p>
             )}

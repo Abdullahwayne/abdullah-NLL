@@ -1118,11 +1118,13 @@ const DugOutLineup = () => {
                               // color: configuration.cellboxTextColor,
 
                               textAlign: "center",
+                              fontFamily:"Poppins"
                             },
                           }}
                           style={{
                             width: "100%",
                             borderBottom: index === 5 ? null : `1px solid`,
+                            fontFamily:"Poppins"
                           }}
                           value={
                             configuration.enableEmptySheet
@@ -1158,7 +1160,9 @@ const DugOutLineup = () => {
                               InputProps={{
                                 ...params.InputProps,
                                 disableUnderline: true,
+
                               }}
+                              style={{fontFamily:"Poppins"}}
                             />
                           )}
                         />
@@ -1176,6 +1180,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
                               textAlign: "center",
+                              fontFamily:"Poppins"
                             },
                           }}
                           style={{
@@ -1253,6 +1258,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
                               textAlign: "center",
+                              fontFamily:"Poppins"
                             },
                           }}
                           style={{
@@ -1315,6 +1321,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
                               textAlign: "center",
+                              fontFamily:"Poppins"
                             },
                           }}
                           style={{
@@ -1395,6 +1402,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
                               textAlign: "center",
+                              fontFamily:"Poppins"
                             },
                           }}
                           style={{
@@ -1458,6 +1466,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               color: configuration.cellboxTextColor,
                               textAlign: "center",
+                              fontFamily:"Poppins"
                             },
                           }}
                           style={{
@@ -1535,6 +1544,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
                               textAlign: "center",
+                              fontFamily:"Poppins"
                             },
                           }}
                           style={{
@@ -1590,6 +1600,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
                               textAlign: "center",
+                              fontFamily:"Poppins"
                             },
                           }}
                           style={{

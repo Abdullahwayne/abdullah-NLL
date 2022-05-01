@@ -277,6 +277,9 @@ $text-color:white;
     .date-heading{
         font-size: 1rem !important;
     }
+    .umpire-large-logo-box {
+        font-size: 20px !important;
+    }
 }
 @media only screen and (max-width: 375px) and (min-width: 320px) {
     .heading-one{
@@ -300,7 +303,13 @@ $text-color:white;
     .date-heading{
         font-size: 1rem !important;
     }
-    .umpire-large-logo-box {width: 60% !important;}
+    .umpire-large-logo-box {width: 60% !important;
+    
+    p{
+        font-size: 20px !important;
+    }
+    }
+  
     .umpire-lineup-main .umpire-lineup .umpire-header .umpire-header-box .umpire-small-logo-box {
         width: 26%;
     }
@@ -370,6 +379,13 @@ $text-color:white;
     .umpire-small-logo-box {
         width: 26% !important;
     }
+    .umpire-large-logo-box{
+       
+            p{
+                font-size: 25px !important;
+            }
+       
+    }
 }
 @media only screen and (max-width: 768px) and (min-width: 768px) {
     .umpire-small-logo-box {
@@ -383,6 +399,13 @@ $text-color:white;
         flex-direction: row !important;
         overflow-x: scroll !important;
     }
+    .umpire-large-logo-box{
+       
+        p{
+            font-size: 35px !important;
+        }
+   
+}
 }
 @media only screen and (max-width: 1024px) and (min-width: 1024px) {
  

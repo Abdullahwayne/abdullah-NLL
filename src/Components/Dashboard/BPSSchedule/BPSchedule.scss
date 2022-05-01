@@ -176,10 +176,16 @@ $primary-color:#7F1D1E;
   .small-logo-box {
     width: 14% !important;
 }
+.large-logo-box{
+  font-size: 35px !important;
+}
 }
 @media only screen and (max-width: 1024px) and (min-width: 1024px) {
   .small-logo-box {
     width: 16% !important;
+}
+.large-logo-box{
+  font-size: 45px !important;
 }
 }
 @media only screen and (max-width: 2560px) and (min-width: 1440px) {
