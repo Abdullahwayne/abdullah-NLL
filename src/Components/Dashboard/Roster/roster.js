@@ -159,6 +159,7 @@ const Roster = () => {
                   handleChange(e, ESTABLISHMENT_NAME_CHANGED);
                 }}
                 type="text"
+                className="heading-name-roster"
                 style={{ textAlign: "center", fontSize: "36px", fontFamily:"Poppins" }}
               />
             </div>
