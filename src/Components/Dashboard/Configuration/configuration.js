@@ -313,7 +313,9 @@ const Configuration = () => {
                     onChange={(e) => handeFileChange(e, "image1")}
                     className="small-logo1-input"
                   />
-                  <Button variant="contained" component="span">
+                  <Button variant="contained" component="span" className="print-button"
+                    style={{ width: "100px", margin: "10px",color:"#FFFFFF" }}
+                  >
                     Upload
                   </Button>
                 </label>
@@ -326,11 +328,13 @@ const Configuration = () => {
               <Typography style={{ margin: "10px" }}> Size</Typography>
             </div>
             <div style={modalRow} className="config-button">
-              <ButtonGroup size="large" style={{ margin: "10px" }}>
+              <div size="large" style={{ margin: "10px" }}>
                 <Button
                   onClick={(e) => {
                     handleConfigurationPropertyChange("leftLogoSize", 20);
                   }}
+                  className="print-button"
+                  style={{ width: "100px", margin: "10px" ,  color:"#ffffff"}}
                 >
                   SMALL
                 </Button>
@@ -338,6 +342,8 @@ const Configuration = () => {
                   onClick={(e) => {
                     handleConfigurationPropertyChange("leftLogoSize", 30);
                   }}
+                  className="print-button"
+                  style={{ width: "100px", margin: "10px", color:"#ffffff",  }}
                 >
                   MEDIUM
                 </Button>
@@ -345,16 +351,18 @@ const Configuration = () => {
                   onClick={(e) => {
                     handleConfigurationPropertyChange("leftLogoSize", 50);
                   }}
+                  className="print-button"
+                  style={{ width: "100px", margin: "10px",  color:"#ffffff" }}
                 >
                   Large
                 </Button>
-              </ButtonGroup>
+              </div>
             </div>
             <div style={modalRow}>
               <Typography style={{ margin: "10px" }}>Position</Typography>
             </div>
             <div style={modalRow}>
-              <ButtonGroup size="large">
+              <div size="large">
                 <Button
                   onClick={(e) => {
                     handleConfigurationPropertyChange(
@@ -362,6 +370,8 @@ const Configuration = () => {
                       "left"
                     );
                   }}
+                  className="print-button"
+                  style={{ width: "100px", margin: "10px" ,  color:"#ffffff"}}
                 >
                   LEFT
                 </Button>
@@ -372,6 +382,8 @@ const Configuration = () => {
                       "center"
                     );
                   }}
+                  className="print-button"
+                  style={{ width: "100px", margin: "10px",  color:"#ffffff" }}
                 >
                   CENTER
                 </Button>
@@ -382,10 +394,12 @@ const Configuration = () => {
                       "right"
                     );
                   }}
+                  className="print-button"
+                  style={{ width: "100px", margin: "10px",  color:"#ffffff" }}
                 >
                   RIGHT
                 </Button>
-              </ButtonGroup>
+              </div>
             </div>
           </div>
 
@@ -423,57 +437,23 @@ const Configuration = () => {
                       onChange={(e) => handeFileChange(e, "image3")}
                       className="small-logo1-input"
                     />
-                    <Button variant="contained" component="span">
+                    <Button variant="contained" component="span"
+                    
+                    className="print-button"
+                    style={{ width: "100px", margin: "10px" ,  color:"#ffffff"}}
+                    >
                       Upload
                     </Button>
                   </label>
                 </div>
-                <div style={modalRow} className="config-mid-image-pos">
-                  <Typography style={{ margin: "10px" }}>
-                    Set Image Position
-                  </Typography>
-                </div>
-                <div style={modalRow} className="config-button">
-                  <ButtonGroup size="large">
-                    <Button
-                      onClick={(e) => {
-                        handleConfigurationPropertyChange(
-                          "textAlignment",
-                          "left"
-                        );
-                      }}
-                    >
-                      LEFT
-                    </Button>
-                    <Button
-                      onClick={(e) => {
-                        handleConfigurationPropertyChange(
-                          "textAlignment",
-                          "center"
-                        );
-                      }}
-                    >
-                      CENTER
-                    </Button>
-                    <Button
-                      onClick={(e) => {
-                        handleConfigurationPropertyChange(
-                          "textAlignment",
-                          "right"
-                        );
-                      }}
-                    >
-                      RIGHT
-                    </Button>
-                  </ButtonGroup>
-                </div>
+               
                 <div style={modalRow} className="config-image-size">
                   <Typography style={{ margin: "10px" }}>
                     Set Image Size
                   </Typography>
                 </div>
                 <div style={modalRow}>
-                  <ButtonGroup size="large">
+                  <div size="large">
                     <Button
                       onClick={(e) => {
                         handleConfigurationPropertyChange(
@@ -481,6 +461,8 @@ const Configuration = () => {
                           100
                         );
                       }}
+                      className="print-button"
+                      style={{ width: "100px", margin: "10px", color:"#ffffff" }}
                     >
                       SMALL
                     </Button>
@@ -491,6 +473,8 @@ const Configuration = () => {
                           150
                         );
                       }}
+                      className="print-button"
+                      style={{ width: "100px", margin: "10px", color:"#ffffff" }}
                     >
                       MEDIUM
                     </Button>
@@ -501,24 +485,20 @@ const Configuration = () => {
                           200
                         );
                       }}
+                      className="print-button"
+                      style={{ width: "100px", margin: "10px", color:"#ffffff" }}
                     >
                       Large
                     </Button>
-                  </ButtonGroup>
+                  </div>
                 </div>
-              </div>
-            ) : (
-              <div style={{ width: "100%" }}>
-                <div style={modalRow}>
-                  <h3>SET MIDDLE SIDE LOGO</h3>
-                </div>
-                <div style={modalRow} className="config-text-set">
+                <div style={modalRow} className="config-mid-image-pos">
                   <Typography style={{ margin: "10px" }}>
-                    Text Position:
+                    Set Image Position
                   </Typography>
                 </div>
-                <div style={modalRow} className="middle-buttons">
-                  <ButtonGroup size="large">
+                <div style={modalRow} className="config-button">
+                  <div size="large">
                     <Button
                       onClick={(e) => {
                         handleConfigurationPropertyChange(
@@ -526,6 +506,8 @@ const Configuration = () => {
                           "left"
                         );
                       }}
+                      className="print-button"
+                      style={{ width: "100px", margin: "10px" , color:"#ffffff"}}
                     >
                       LEFT
                     </Button>
@@ -536,6 +518,8 @@ const Configuration = () => {
                           "center"
                         );
                       }}
+                      className="print-button"
+                      style={{ width: "100px", margin: "10px", color:"#ffffff" }}
                     >
                       CENTER
                     </Button>
@@ -546,20 +530,31 @@ const Configuration = () => {
                           "right"
                         );
                       }}
+                      className="print-button"
+                      style={{ width: "100px", margin: "10px" , color:"#ffffff"}}
                     >
                       RIGHT
                     </Button>
-                  </ButtonGroup>
+                  </div>
                 </div>
+              </div>
+            ) : (
+              <div style={{ width: "100%" }}>
+                <div style={modalRow}>
+                  <h3 style={{paddingTop : "24px"}}>SET MIDDLE SIDE LOGO</h3>
+                </div>
+               
                 <div style={modalRow} className="config-mid-heading">
                   <Typography style={{ margin: "20px" }}>Text Size:</Typography>
                 </div>
                 <div style={modalRow}>
-                  <ButtonGroup size="large">
+                  <div size="medium">
                     <Button
                       onClick={(e) => {
                         handleConfigurationPropertyChange("fontSize", "22px");
                       }}
+                      className="print-button"
+                      style={{ width: "100px", margin: "10px", color:"#ffffff" }}
                     >
                       Small
                     </Button>
@@ -567,6 +562,8 @@ const Configuration = () => {
                       onClick={(e) => {
                         handleConfigurationPropertyChange("fontSize", "32px");
                       }}
+                      className="print-button"
+                      style={{ width: "100px", margin: "10px", color:"#ffffff" }}
                     >
                       Medium
                     </Button>
@@ -574,10 +571,57 @@ const Configuration = () => {
                       onClick={(e) => {
                         handleConfigurationPropertyChange("fontSize", "55px");
                       }}
+                      className="print-button"
+                      style={{ width: "100px", margin: "10px", color:"#ffffff" }}
                     >
                       Large
                     </Button>
-                  </ButtonGroup>
+                  </div>
+                </div>
+                <div style={modalRow} className="config-text-set">
+                  <Typography style={{ margin: "10px" }}>
+                    Text Position:
+                  </Typography>
+                </div>
+                <div style={modalRow} className="middle-buttons">
+                  <div size="large">
+                    <Button
+                      onClick={(e) => {
+                        handleConfigurationPropertyChange(
+                          "textAlignment",
+                          "left"
+                        );
+                      }}
+                      className="print-button"
+                      style={{ width: "100px", margin: "10px", color:"#ffffff" }}
+                    >
+                      LEFT
+                    </Button>
+                    <Button
+                      onClick={(e) => {
+                        handleConfigurationPropertyChange(
+                          "textAlignment",
+                          "center"
+                        );
+                      }}
+                      className="print-button"
+                      style={{ width: "100px", margin: "10px", color:"#ffffff" }}
+                    >
+                      CENTER
+                    </Button>
+                    <Button
+                      onClick={(e) => {
+                        handleConfigurationPropertyChange(
+                          "textAlignment",
+                          "right"
+                        );
+                      }}
+                      className="print-button"
+                      style={{ width: "100px", margin: "10px", color:"#ffffff" }}
+                    >
+                      RIGHT
+                    </Button>
+                  </div>
                 </div>
               </div>
             )}
@@ -601,7 +645,11 @@ const Configuration = () => {
                     onChange={(e) => handeFileChange(e, "image2")}
                     className="small-logo2-input"
                   />
-                  <Button variant="contained" component="span">
+                  <Button variant="contained" component="span"
+                   className="print-button"
+                   style={{ width: "100px", margin: "10px", color:"#ffffff" }}
+                  
+                  >
                     Upload
                   </Button>
                 </label>
@@ -612,14 +660,16 @@ const Configuration = () => {
               <h3>SET RIGHT SIDE LOGO</h3>
             </div>
             <div style={modalRow}>
-              <Typography style={{ margin: "10px" }}> Size</Typography>
+              <Typography style={{ margin: "10px", }}> Size</Typography>
             </div>
             <div style={modalRow}>
-              <ButtonGroup size="large">
+              <div size="large">
                 <Button
                   onClick={(e) => {
                     handleConfigurationPropertyChange("rightLogoSize", 20);
                   }}
+                  className="print-button"
+                  style={{ width: "100px", margin: "10px", color:"#ffffff" }}
                 >
                   SMALL
                 </Button>
@@ -627,6 +677,8 @@ const Configuration = () => {
                   onClick={(e) => {
                     handleConfigurationPropertyChange("rightLogoSize", 30);
                   }}
+                  className="print-button"
+                  style={{ width: "100px", margin: "10px", color:"#ffffff" }}
                 >
                   Medium
                 </Button>
@@ -634,17 +686,19 @@ const Configuration = () => {
                   onClick={(e) => {
                     handleConfigurationPropertyChange("rightLogoSize", 50);
                   }}
+                  className="print-button"
+                  style={{ width: "100px", margin: "10px", color:"#ffffff" }}
                 >
                   Large
                 </Button>
-              </ButtonGroup>
+              </div>
             </div>
 
             <div style={modalRow} className="config-position">
-              <Typography style={{ margin: "10px" }}>Position</Typography>
+              <Typography style={{ margin: "7px" }}>Position</Typography>
             </div>
             <div style={modalRow}>
-              <ButtonGroup size="large">
+              <div size="large">
                 <Button
                   onClick={(e) => {
                     handleConfigurationPropertyChange(
@@ -652,6 +706,8 @@ const Configuration = () => {
                       "left"
                     );
                   }}
+                  className="print-button"
+                  style={{ width: "100px", margin: "10px" , color:"#ffffff"}}
                 >
                   LEFT
                 </Button>
@@ -662,6 +718,8 @@ const Configuration = () => {
                       "center"
                     );
                   }}
+                  className="print-button"
+                  style={{ width: "100px", margin: "10px", color:"#ffffff" }}
                 >
                   CENTER
                 </Button>
@@ -672,10 +730,24 @@ const Configuration = () => {
                       "right"
                     );
                   }}
+                  className="print-button"
+                  style={{ width: "100px", margin: "10px", color:"#ffffff" }}
                 >
                   RIGHT
                 </Button>
-              </ButtonGroup>
+              </div>
+              {/* <div className="button-group"
+              style={{width : "100%", display:"flex", justifyContent:"space-between"}}
+              >
+              <div style={{width : "32%", }}
+                  
+              
+              >left</div>
+              <div style={{width : "32%", }}>center</div>
+              <div style={{width : "32%", }}>Right</div>
+
+                
+              </div> */}
             </div>
           </div>
         </div>

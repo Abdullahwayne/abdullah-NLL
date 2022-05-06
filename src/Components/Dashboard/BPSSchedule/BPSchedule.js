@@ -224,6 +224,7 @@ const BPSchedule = () => {
               justifyContent: "center",
               alignItems: configuration.textAlignment,
               color: configuration.headerColor,
+              fontSize: configuration.fontSize,
               overflow: "hidden",
             }}
             className="large-logo-box"
@@ -239,13 +240,13 @@ const BPSchedule = () => {
                 }
                 style={{
                   width: configuration.centerLogoSize * 3,
-                  height: configuration.centerLogoSize,
+                  height: "100%",
                 }}
                 alt="Logo 1"
                 className="img-bps"
               ></img>
             ) : (
-              <p style={{ margin: "0px", fontSize: configuration.fontSize -"20px" }}>
+              <p style={{ margin: "0px", fontSize: configuration.fontSize -"20px", fontFamily:"Poppins" }}>
                 {establishmentName}
               </p>
             )}

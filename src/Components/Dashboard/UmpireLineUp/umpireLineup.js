@@ -192,6 +192,7 @@ const UmpireLineup = (props) => {
                   overflow: "hidden",
                   justifyContent: "center",
                   alignItems: configuration.textAlignment,
+                  width:configuration.centerLogoSize * 6
                 }}
                 className="umpire-large-logo-box"
                 onClick={() => {
@@ -202,8 +203,9 @@ const UmpireLineup = (props) => {
                   <img
                     style={{
                       overflow: "hidden",
-                      width: configuration.centerLogoSize * 3,
-                      height: configuration.centerLogoSize,
+                      width: configuration.centerLogoSize * 2 ,
+                      // height: configuration.centerLogoSize,
+                      height:"100%"
                     }}
                     src={
                       smallImage3 === "" ||
@@ -269,7 +271,7 @@ const UmpireLineup = (props) => {
               >
                 <h2
                   className="heading-one"
-                  style={{ color: configuration.cellboxTextColor, fontFamily:"Poppins" }}
+                  style={{ color: configuration.cellboxTextColor, fontFamily:"Poppins" , paddingLeft:"20px"}}
                 >
                   ORIGINAL LINEUP
                 </h2>
@@ -277,7 +279,8 @@ const UmpireLineup = (props) => {
                   style={{
                     marginRight: "10%",
                     color: configuration.cellboxTextColor,
-                    fontFamily:"Poppins"
+                    fontFamily:"Poppins",
+                    paddingLeft:"0px"
                   }}
                   className="heading-two"
                 >
@@ -608,9 +611,9 @@ const UmpireLineup = (props) => {
                         ) : (
                           <p
                             style={{
-                             height:"100%",
+                             height:"40%",
                            width:"70%",
-                           fontSize: "35px",
+                           fontSize: "22px",
                             flexWrap:"wrap",
                               margin: "0px",
                               color: configuration.headerColor,

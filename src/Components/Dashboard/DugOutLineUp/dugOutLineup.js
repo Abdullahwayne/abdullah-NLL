@@ -544,7 +544,8 @@ const DugOutLineup = () => {
                   <img
                     style={{
                       width: configuration.centerLogoSize * 3,
-                      height: configuration.centerLogoSize,
+                      // height: configuration.centerLogoSize,
+                      height:"100%"
                     }}
                     src={
                       smallImage3 === "" ||
@@ -635,8 +636,9 @@ const DugOutLineup = () => {
                   min: 0,
                   style: {
                     textAlign: "center",
-                    color: configuration.cellboxTextColor,
+                    color: configuration.headerColor,
                     fontFamily:"Poppins"
+                    
                   },
                 }}
               />
@@ -649,7 +651,7 @@ const DugOutLineup = () => {
               }}
               className="versus"
             >
-              <p style={{fontFamily:"Poppins"}}>VS</p>
+              <p style={{fontFamily:"Poppins",  color: configuration.headerColor}}>VS</p>
             </div>
             <div className="team-name">
               <Input
@@ -664,7 +666,7 @@ const DugOutLineup = () => {
                   min: 0,
                   style: {
                     textAlign: "center",
-                    color: configuration.cellboxTextColor,
+                    color: configuration.headerColor,
                     fontFamily:"Poppins"
                   },
                 }}
@@ -922,7 +924,7 @@ const DugOutLineup = () => {
                     }}
                     className="player-box"
                   >
-                    {/* <div
+                    <div
                       style={{
                         color: configuration.numberColor,
                       }}
@@ -955,7 +957,7 @@ const DugOutLineup = () => {
                           {index + 1}
                         </p>
                       )}
-                    </div> */}
+                    </div>
                     <div className="player-detail-box">
                       <div className="player-detail-row">
                         <Input
@@ -1464,7 +1466,7 @@ const DugOutLineup = () => {
                         <Autocomplete
                           sx={{
                             "& .MuiAutocomplete-input": {
-                              color: configuration.cellboxTextColor,
+                              // color: configuration.cellboxTextColor,
                               textAlign: "center",
                               fontFamily:"Poppins"
                             },
