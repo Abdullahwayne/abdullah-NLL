@@ -328,7 +328,7 @@ const Configuration = () => {
               <Typography style={{ margin: "10px" }}> Size</Typography>
             </div>
             <div style={modalRow} className="config-button">
-              <div size="large" style={{ margin: "10px" }}>
+              <div size="large" style={{ margin: "10px" }} className="config-button-group">
                 <Button
                   onClick={(e) => {
                     handleConfigurationPropertyChange("leftLogoSize", 20);
@@ -362,7 +362,7 @@ const Configuration = () => {
               <Typography style={{ margin: "10px" }}>Position</Typography>
             </div>
             <div style={modalRow}>
-              <div size="large">
+              <div size="large"  className="config-button-group">
                 <Button
                   onClick={(e) => {
                     handleConfigurationPropertyChange(
@@ -453,7 +453,7 @@ const Configuration = () => {
                   </Typography>
                 </div>
                 <div style={modalRow}>
-                  <div size="large">
+                  <div size="large" className="config-button-group" >
                     <Button
                       onClick={(e) => {
                         handleConfigurationPropertyChange(
@@ -498,7 +498,7 @@ const Configuration = () => {
                   </Typography>
                 </div>
                 <div style={modalRow} className="config-button">
-                  <div size="large">
+                  <div size="large" className="config-button-group">
                     <Button
                       onClick={(e) => {
                         handleConfigurationPropertyChange(
@@ -548,7 +548,7 @@ const Configuration = () => {
                   <Typography style={{ margin: "20px" }}>Text Size:</Typography>
                 </div>
                 <div style={modalRow}>
-                  <div size="medium">
+                  <div size="medium" className="config-button-group ">
                     <Button
                       onClick={(e) => {
                         handleConfigurationPropertyChange("fontSize", "22px");
@@ -584,7 +584,7 @@ const Configuration = () => {
                   </Typography>
                 </div>
                 <div style={modalRow} className="middle-buttons">
-                  <div size="large">
+                  <div size="large" className="config-button-group">
                     <Button
                       onClick={(e) => {
                         handleConfigurationPropertyChange(
@@ -663,7 +663,7 @@ const Configuration = () => {
               <Typography style={{ margin: "10px", }}> Size</Typography>
             </div>
             <div style={modalRow}>
-              <div size="large">
+              <div size="large" className="config-button-group">
                 <Button
                   onClick={(e) => {
                     handleConfigurationPropertyChange("rightLogoSize", 20);
@@ -698,7 +698,7 @@ const Configuration = () => {
               <Typography style={{ margin: "7px" }}>Position</Typography>
             </div>
             <div style={modalRow}>
-              <div size="large">
+              <div size="large " className="config-button-group">
                 <Button
                   onClick={(e) => {
                     handleConfigurationPropertyChange(

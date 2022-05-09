@@ -111,6 +111,10 @@ display: flex !important;
     .small-logo1-input{
         width: 60% !important;
     }
+    .config-button-group {
+        display: flex !important;
+        flex-direction: column !important;
+    }
 }
 @media only screen and (max-width: 375px) and (min-width: 320px) {
 
@@ -140,6 +144,10 @@ display: flex !important;
     }
     .small-logo1-input{
         width: 60% !important;
+    }
+    .config-button-group {
+        display: flex !important;
+        flex-direction: column !important;
     }
 }
 @media only screen and (max-width: 428px) and (min-width: 375px) {
