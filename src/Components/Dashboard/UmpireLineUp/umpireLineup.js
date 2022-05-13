@@ -192,7 +192,7 @@ const UmpireLineup = (props) => {
                   overflow: "hidden",
                   justifyContent: "center",
                   alignItems: configuration.textAlignment,
-                  width:configuration.centerLogoSize * 6
+                  width: configuration.centerLogoSize * 6,
                 }}
                 className="umpire-large-logo-box"
                 onClick={() => {
@@ -203,9 +203,9 @@ const UmpireLineup = (props) => {
                   <img
                     style={{
                       overflow: "hidden",
-                      width: configuration.centerLogoSize * 2 ,
+                      width: configuration.centerLogoSize * 2,
                       // height: configuration.centerLogoSize,
-                      height:"100%"
+                      height: "100%",
                     }}
                     src={
                       smallImage3 === "" ||
@@ -224,8 +224,7 @@ const UmpireLineup = (props) => {
                       color: configuration.headerColor,
                       overflow: "hidden",
                       fontSize: configuration.fontSize - "30px",
-                      fontFamily:"Poppins",
-                      
+                      fontFamily: "Poppins",
                     }}
                     className="p-logo"
                   >
@@ -271,7 +270,11 @@ const UmpireLineup = (props) => {
               >
                 <h2
                   className="heading-one"
-                  style={{ color: configuration.cellboxTextColor, fontFamily:"Poppins" , paddingLeft:"20px"}}
+                  style={{
+                    color: configuration.cellboxTextColor,
+                    fontFamily: "Poppins",
+                    paddingLeft: "20px",
+                  }}
                 >
                   ORIGINAL LINEUP
                 </h2>
@@ -279,8 +282,8 @@ const UmpireLineup = (props) => {
                   style={{
                     marginRight: "10%",
                     color: configuration.cellboxTextColor,
-                    fontFamily:"Poppins",
-                    paddingLeft:"0px"
+                    fontFamily: "Poppins",
+                    paddingLeft: "0px",
                   }}
                   className="heading-two"
                 >
@@ -296,8 +299,10 @@ const UmpireLineup = (props) => {
               >
                 <h2
                   className="heading-three"
-                  style={{ color: configuration.cellboxTextColor,
-                    fontFamily:"Poppins" }}
+                  style={{
+                    color: configuration.cellboxTextColor,
+                    fontFamily: "Poppins",
+                  }}
                 >
                   CHANGES
                 </h2>
@@ -338,14 +343,14 @@ const UmpireLineup = (props) => {
                                   : "block",
                             }}
                           >
-                            <Typography style={{  fontFamily:"Poppins"}}>
+                            <Typography style={{ fontFamily: "Poppins" }}>
                               {configuration.enableEmptySheet ? (
                                 " "
                               ) : team1[index].playerOne === "" ? (
                                 <p
                                   style={{
                                     color: "#F5F5F5",
-                                    fontFamily:"Poppins"
+                                    fontFamily: "Poppins",
                                   }}
                                 >
                                   none
@@ -359,7 +364,7 @@ const UmpireLineup = (props) => {
                             className="player-position"
                             // style={{ color: configuration.cellboxTextColor }}
                           >
-                            <Typography style={{  fontFamily:"Poppins"}}>
+                            <Typography style={{ fontFamily: "Poppins" }}>
                               {configuration.enableEmptySheet
                                 ? " "
                                 : team1[index].playerOnePosition === ""
@@ -392,8 +397,7 @@ const UmpireLineup = (props) => {
                               team1[index].playerOne === null
                                 ? "none"
                                 : "1px solid",
-                           fontFamily:"Poppins"
-
+                            fontFamily: "Poppins",
                           }}
                           className="player-detail-row"
                         >
@@ -401,19 +405,26 @@ const UmpireLineup = (props) => {
                             className="player-name"
                             // style={{ color: configuration.cellboxTextColor }}
                           >
-                            <Typography style={{  fontFamily:"Poppins"}}>
+                            <Typography style={{ fontFamily: "Poppins" }}>
                               {configuration.enableEmptySheet ? (
                                 ""
                               ) : team1[index].playerTwo === "" ? (
-                         
-                            <p style={{ color: "#F5F5F5",   fontFamily:"Poppins" }}> none</p>
+                                <p
+                                  style={{
+                                    color: "#F5F5F5",
+                                    fontFamily: "Poppins",
+                                  }}
+                                >
+                                  {" "}
+                                  none
+                                </p>
                               ) : (
                                 team1[index].playerTwo
                               )}
                             </Typography>
                           </div>
                           <div className="player-position">
-                            <Typography style={{  fontFamily:"Poppins"}}>
+                            <Typography style={{ fontFamily: "Poppins" }}>
                               {configuration.enableEmptySheet
                                 ? " "
                                 : team1[index].playerTwoPosition}
@@ -490,7 +501,7 @@ const UmpireLineup = (props) => {
               style={{
                 backgroundColor: configuration.cellboxColor,
                 color: configuration.cellboxTextColor,
-                fontFamily:"Poppins"
+                fontFamily: "Poppins",
               }}
               className="umpire-lineup-roster-header"
             >
@@ -503,7 +514,9 @@ const UmpireLineup = (props) => {
                     className="body-item"
                     // style={{ color: configuration.cellboxTextColor }}
                   >
-                    <Typography style={{  fontFamily:"Poppins"}}>{names[key]}</Typography>
+                    <Typography style={{ fontFamily: "Poppins" }}>
+                      {names[key]}
+                    </Typography>
                   </div>
                 );
               })}
@@ -512,12 +525,14 @@ const UmpireLineup = (props) => {
               className="coach-box"
               // style={{ color: configuration.cellboxTextColor }}
             >
-              <p className="coach-name" style={{  fontFamily:"Poppins"}}>Head Coach:</p>
+              <p className="coach-name" style={{ fontFamily: "Poppins" }}>
+                Head Coach:
+              </p>
               <Input
                 style={{
                   fontWeight: "bolder",
-                  fontFamily:"Poppins"
-                
+                  fontFamily: "Poppins",
+
                   // color: configuration.cellboxTextColor,
                 }}
                 disableUnderline
@@ -558,8 +573,10 @@ const UmpireLineup = (props) => {
                 <div className="umpire-lineup">
                   <div className="umpire-header">
                     <div className="umpire-header-box">
-                      <div className="umpire-small-logo-box"
-                      style={{width :"10%"}}>
+                      <div
+                        className="umpire-small-logo-box"
+                        style={{ width: "10%" }}
+                      >
                         <img
                           onMouseEnter={() => {
                             console.log("on");
@@ -574,7 +591,6 @@ const UmpireLineup = (props) => {
                               : assetURL + smallImage1
                           }
                           alt="Logo 1"
-                         
                         ></img>
                       </div>
                       <div
@@ -583,8 +599,8 @@ const UmpireLineup = (props) => {
                           alignItems: configuration.textAlignment,
                           fontSize: configuration.fontSize,
                           overflow: "hidden",
-                          
-                          width:"100%"
+
+                          width: "100%",
                         }}
                         className="umpire-large-logo-box"
                         onClick={() =>
@@ -598,7 +614,7 @@ const UmpireLineup = (props) => {
                       >
                         {configuration.enableLogo ? (
                           <img
-                            style={{ width: "80%", height: "100%", }}
+                            style={{ width: "80%", height: "100%" }}
                             src={
                               smallImage3 === "" ||
                               smallImage3 === undefined ||
@@ -611,14 +627,13 @@ const UmpireLineup = (props) => {
                         ) : (
                           <p
                             style={{
-                             height:"40%",
-                           width:"70%",
-                           fontSize: "22px",
-                            flexWrap:"wrap",
+                              height: "40%",
+                              width: "70%",
+                              fontSize: "22px",
+                              flexWrap: "wrap",
                               margin: "0px",
                               color: configuration.headerColor,
-                              fontFamily:"Poppins"
-                             
+                              fontFamily: "Poppins",
                             }}
                           >
                             {establishmentName}
@@ -658,19 +673,23 @@ const UmpireLineup = (props) => {
                           backgroundColor: configuration.cellboxTextColor,
                         }}
                       >
-                        <h2 style={{ fontSize: "12px",  fontFamily:"Poppins" }}>ORIGINAL LINEUP</h2>
+                        <h2 style={{ fontSize: "12px", fontFamily: "Poppins" }}>
+                          ORIGINAL LINEUP
+                        </h2>
                         <h2
                           style={{
                             marginRight: "10%",
                             fontSize: "16px",
-                            fontFamily:"Poppins"
+                            fontFamily: "Poppins",
                           }}
                         >
                           POS.
                         </h2>
                       </div>
                       <div className="right-side">
-                        <h2 style={{ fontSize: "16px",  fontFamily:"Poppins" }}>CHANGES</h2>
+                        <h2 style={{ fontSize: "16px", fontFamily: "Poppins" }}>
+                          CHANGES
+                        </h2>
                       </div>
                     </div>
                     {/* team1 */}
@@ -714,14 +733,24 @@ const UmpireLineup = (props) => {
                                           : "block",
                                     }}
                                   >
-                                    <Typography style={{ fontSize: "12px",   fontFamily:"Poppins" }}>
+                                    <Typography
+                                      style={{
+                                        fontSize: "12px",
+                                        fontFamily: "Poppins",
+                                      }}
+                                    >
                                       {configuration.enableEmptySheet
                                         ? " "
                                         : team1[index].playerOne}
                                     </Typography>
                                   </div>
                                   <div className="player-position">
-                                    <Typography style={{ fontSize: "12px",   fontFamily:"Poppins"}}>
+                                    <Typography
+                                      style={{
+                                        fontSize: "12px",
+                                        fontFamily: "Poppins",
+                                      }}
+                                    >
                                       {configuration.enableEmptySheet
                                         ? " "
                                         : team1[index].playerOnePosition}
@@ -735,7 +764,7 @@ const UmpireLineup = (props) => {
                                   ></div>
                                 ) : null}
                                 <div
-                                  tyle={{
+                                  style={{
                                     display:
                                       configuration.enableEmptySheet === true ||
                                       team1[index].playerTwo === "" ||
@@ -751,6 +780,7 @@ const UmpireLineup = (props) => {
                                       team1[index].playerOne === null
                                         ? "none"
                                         : "1px solid",
+                                    fontFamily: "Poppins",
                                   }}
                                   className="player-detail-row"
                                 >
@@ -760,14 +790,24 @@ const UmpireLineup = (props) => {
                                     //   color: configuration.cellboxTextColor,
                                     // }}
                                   >
-                                    <Typography style={{ fontSize: "12px" ,   fontFamily:"Poppins"}}>
+                                    <Typography
+                                      style={{
+                                        fontSize: "12px",
+                                        fontFamily: "Poppins",
+                                      }}
+                                    >
                                       {configuration.enableEmptySheet
                                         ? " "
                                         : team1[index].playerTwo}
                                     </Typography>
                                   </div>
                                   <div className="player-position">
-                                    <Typography style={{ fontSize: "12px",   fontFamily:"Poppins" }}>
+                                    <Typography
+                                      style={{
+                                        fontSize: "12px",
+                                        fontFamily: "Poppins",
+                                      }}
+                                    >
                                       {configuration.enableEmptySheet
                                         ? " "
                                         : team1[index].playerTwoPosition}
@@ -805,18 +845,23 @@ const UmpireLineup = (props) => {
                                   <div
                                     className="player-name"
                                     style={{
-                                      color: configuration.cellboxTextColor,
+                                      color: "#ffffff",
                                     }}
                                   >
-                                    {/* <Typography>{team2[index].playerOne}</Typography> */}
+                                    <Typography>"aaaaa"</Typography>
                                   </div>
                                   <div
                                     className="player-position"
                                     style={{
-                                      color: configuration.cellboxTextColor,
+                                      color: "#ffffff",
                                     }}
                                   >
-                                    <Typography style={{ fontSize: "12px",   fontFamily:"Poppins" }}>
+                                    <Typography
+                                      style={{
+                                        fontSize: "12px",
+                                        fontFamily: "Poppins",
+                                      }}
+                                    >
                                       {/* {team2[index].playerOnePosition} */}
                                     </Typography>
                                   </div>
@@ -830,10 +875,10 @@ const UmpireLineup = (props) => {
                                   <div
                                     className="player-name"
                                     style={{
-                                      color: configuration.cellboxTextColor,
+                                      color: "#ffffff",
                                     }}
                                   >
-                                    {/* <Typography>{team2[index].playerTwo}</Typography> */}
+                                    <Typography>"aaaaaa"</Typography>
                                   </div>
                                   <div
                                     className="player-position"
@@ -865,7 +910,7 @@ const UmpireLineup = (props) => {
                           fontSize: "16px",
                           margin: "0px",
                           padding: "0px",
-                          fontFamily:"Poppins"
+                          fontFamily: "Poppins",
                         }}
                       >
                         ROSTER
@@ -873,13 +918,12 @@ const UmpireLineup = (props) => {
                     </div>
                     <div
                       style={{
-                       
                         rowGap: "0px",
                         gap: "0px",
                         columnGap: "0px",
                         maxHeight: "200px",
                         width: "110%",
-                        fontFamily:"Poppins"
+                        fontFamily: "Poppins",
                       }}
                       className="roster-body-main"
                     >
@@ -887,13 +931,15 @@ const UmpireLineup = (props) => {
                         return (
                           <div
                             style={{
-                              fontSize:"2px",
+                              fontSize: "2px",
                               width: "80px",
                               rowGap: "2px",
                             }}
                             className="body-item"
                           >
-                            <Typography style={{ fontSize: "8px",   fontFamily:"Poppins" }}>
+                            <Typography
+                              style={{ fontSize: "8px", fontFamily: "Poppins" }}
+                            >
                               {names[key]}
                             </Typography>
                           </div>
@@ -905,7 +951,7 @@ const UmpireLineup = (props) => {
                         style={{
                           fontSize: "12px",
                           color: configuration.cellboxTextColor,
-                          fontFamily:"Poppins"
+                          fontFamily: "Poppins",
                         }}
                         className="coach-name"
                       >
@@ -916,7 +962,6 @@ const UmpireLineup = (props) => {
                           fontSize: "12px",
                           fontWeight: "bolder",
                           fontFamily: "Poppins",
-                          
                         }}
                         disableUnderline
                         value={configuration.enableEmptySheet ? " " : coachName}

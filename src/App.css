@@ -1,7 +1,13 @@
+/* * {
+  -webkit-print-color-adjust: exact !important;
+  color-adjust: exact !important;
+} */
+
 @font-face {
   font-family: Raleway;
   src: url("./Fonts/Raleway/static/Raleway-Regular.ttf");
 }
+
 @font-face {
   font-family: Poppins;
   src: url("./Fonts/Poppins/Poppins-Bold.ttf");
