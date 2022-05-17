@@ -5,14 +5,19 @@ $text-color:white;
 .wow {
     width: 95%;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: hidden;
+    -moz-box-sizing: border-box
 
 }
+
 
 .wow::-webkit-scrollbar {
     display: none;
+    -moz-box-sizing: border-box
 }
-
+.umpire-lineup-main :-webkit-scrollbar-track{
+    display:none !important;
+}
 .umpire-lineup-main {
     overflow-y: scroll;
     width: 100%;
@@ -92,6 +97,10 @@ $text-color:white;
                 margin: 0px;
 
             }
+        }
+        .react-print {
+            -webkit-print-color-adjust: exact !important;   /* Chrome, Safari, Edge */
+            color-adjust: exact !important;   
         }
 
         .umpire-body {
@@ -175,6 +184,7 @@ $text-color:white;
 
                             .player-detail-row {
                                 width: 100%;
+                              
                                 display: flex;
 
                                 .player-name {

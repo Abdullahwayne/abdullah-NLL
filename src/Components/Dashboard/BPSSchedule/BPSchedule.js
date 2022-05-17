@@ -180,6 +180,7 @@ const BPSchedule = () => {
             onAfterPrint={() => {
               setCircularLoader(false);
             }}
+           
             content={() => {
               setCircularLoader(true);
               return myref;

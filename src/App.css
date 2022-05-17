@@ -1,7 +1,8 @@
-/* * {
-  -webkit-print-color-adjust: exact !important;
-  color-adjust: exact !important;
-} */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-print-color-adjust: exact !important;   /* Chrome, Safari, Edge */
+  color-adjust: exact !important; 
+}
 
 @font-face {
   font-family: Raleway;
@@ -12,7 +13,6 @@
   font-family: Poppins;
   src: url("./Fonts/Poppins/Poppins-Bold.ttf");
 }
-
 
 .App {
   font-family: Raleway;

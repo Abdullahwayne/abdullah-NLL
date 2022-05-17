@@ -148,6 +148,7 @@ const UmpireLineup = (props) => {
             onAfterPrint={() => {
               setCircularLoader(false);
             }}
+            className="react-print"
             content={() => {
               setCircularLoader(true);
               return myref;
@@ -697,7 +698,7 @@ const UmpireLineup = (props) => {
                       <div
                         className="team-selection"
                         style={{
-                          borderRight: `1px solid ${configuration.cellboxTextColor}`,
+                          borderRight: `1px solid `,
                         }}
                         u
                       >

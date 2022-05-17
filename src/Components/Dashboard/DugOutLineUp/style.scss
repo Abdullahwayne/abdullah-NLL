@@ -6,8 +6,14 @@ $primary-color: #850037;
   display: flex;
   flex-wrap: wrap;
   overflow-y: scroll;
+ 
+  -webkit-overflow-scrolling: auto; 
+  border-block-end: black
 
-
+}
+.print-button {
+  body { color-adjust: exact; }
+  -moz-border-top-colors : black
 }
 
 .header-timer-box {

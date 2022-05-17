@@ -443,6 +443,10 @@ const DugOutLineup = () => {
     // getImage2();
   }, [smallImage2]);
 
+  const pageStyle = `@page { size: A4 portrait } 
+   
+  `;
+
   return (
     <div className="dugoutMain">
       <div className="print-button-div">
@@ -452,12 +456,16 @@ const DugOutLineup = () => {
           </div>
         ) : (
           <ReactToPrint
+            
             removeAfterPrint={true}
             onPrintError={(e) => console.log(e, "<==== my error")}
             trigger={() => <button className="print-button">PREVIEW</button>}
+           
             onAfterPrint={() => {
               setCircularLoader(false);
             }}
+            
+            className="react-print"
             content={() => {
               setCircularLoader(true);
               return myComponent;
@@ -545,7 +553,7 @@ const DugOutLineup = () => {
                     style={{
                       width: configuration.centerLogoSize * 3,
                       // height: configuration.centerLogoSize,
-                      height:"100%"
+                      height: "100%",
                     }}
                     src={
                       smallImage3 === "" ||
@@ -559,7 +567,11 @@ const DugOutLineup = () => {
                   ></img>
                 ) : (
                   <p
-                    style={{ margin: "0px", color: configuration.headerColor, fontFamily:"Poppins" }}
+                    style={{
+                      margin: "0px",
+                      color: configuration.headerColor,
+                      fontFamily: "Poppins",
+                    }}
                   >
                     {establishmentName}
                   </p>
@@ -637,8 +649,7 @@ const DugOutLineup = () => {
                   style: {
                     textAlign: "center",
                     color: configuration.headerColor,
-                    fontFamily:"Poppins"
-                    
+                    fontFamily: "Poppins",
                   },
                 }}
               />
@@ -651,7 +662,14 @@ const DugOutLineup = () => {
               }}
               className="versus"
             >
-              <p style={{fontFamily:"Poppins",  color: configuration.headerColor}}>VS</p>
+              <p
+                style={{
+                  fontFamily: "Poppins",
+                  color: configuration.headerColor,
+                }}
+              >
+                VS
+              </p>
             </div>
             <div className="team-name">
               <Input
@@ -667,7 +685,7 @@ const DugOutLineup = () => {
                   style: {
                     textAlign: "center",
                     color: configuration.headerColor,
-                    fontFamily:"Poppins"
+                    fontFamily: "Poppins",
                   },
                 }}
               />
@@ -716,8 +734,8 @@ const DugOutLineup = () => {
                             style={{
                               width: "100%",
                               color: configuration.numberColor,
-                              font:"Poppins",
-                              fontWeight:"bold",
+                              font: "Poppins",
+                              fontWeight: "bold",
                               fontSize: lastPosition === "P" ? "55px" : "55px",
                               margin: "0px",
                               padding: "0px",
@@ -749,7 +767,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
                               // textAlign: "center",
-                              fontFamily:"Poppins"
+                              fontFamily: "Poppins",
                             },
                           }}
                           className="player-name-autocomplete"
@@ -812,7 +830,7 @@ const DugOutLineup = () => {
                                 "one"
                               );
                             }}
-                            style={{fontFamily:"Poppins"}}
+                            style={{ fontFamily: "Poppins" }}
                           >
                             <MenuItem value={""}>NONE</MenuItem>
                             {positions.map((key, index) => {
@@ -831,7 +849,7 @@ const DugOutLineup = () => {
                           sx={{
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
-                              fontFamily:"Poppins"
+                              fontFamily: "Poppins",
                             },
                           }}
                           className="player-name-autocomplete"
@@ -895,7 +913,7 @@ const DugOutLineup = () => {
                                 "two"
                               );
                             }}
-                            style={{fontFamily:"Poppins"}}
+                            style={{ fontFamily: "Poppins" }}
                           >
                             <MenuItem value={""}>NONE</MenuItem>
                             {positions.map((key, index) => {
@@ -963,7 +981,7 @@ const DugOutLineup = () => {
                         <Input
                           // style={{ color: configuration.cellboxTextColor }}
                           className="player-name-autocomplete"
-                          style={{fontFamily:"Poppins"}}
+                          style={{ fontFamily: "Poppins" }}
                           disableUnderline
                           value={
                             configuration.enableEmptySheet
@@ -1001,9 +1019,8 @@ const DugOutLineup = () => {
                                 ASSIGNED_POSITION_CHANGED_FOR_TEAM2_CHANGED,
                                 "one"
                               );
-
                             }}
-                            style={{fontFamily:"Poppins"}}
+                            style={{ fontFamily: "Poppins" }}
                           >
                             <MenuItem value="">none</MenuItem>
 
@@ -1036,7 +1053,7 @@ const DugOutLineup = () => {
                               "two"
                             );
                           }}
-                          style={{fontFamily:"Poppins"}}
+                          style={{ fontFamily: "Poppins" }}
                         ></Input>
                         <FormControl
                           className="player-position-select"
@@ -1060,7 +1077,7 @@ const DugOutLineup = () => {
                                 "two"
                               );
                             }}
-                            style={{fontFamily:"Poppins"}}
+                            style={{ fontFamily: "Poppins" }}
                           >
                             <MenuItem value={""}>{""}</MenuItem>
                             {positions.map((key, index) => {
@@ -1120,13 +1137,13 @@ const DugOutLineup = () => {
                               // color: configuration.cellboxTextColor,
 
                               textAlign: "center",
-                              fontFamily:"Poppins"
+                              fontFamily: "Poppins",
                             },
                           }}
                           style={{
                             width: "100%",
                             borderBottom: index === 5 ? null : `1px solid`,
-                            fontFamily:"Poppins"
+                            fontFamily: "Poppins",
                           }}
                           value={
                             configuration.enableEmptySheet
@@ -1162,9 +1179,8 @@ const DugOutLineup = () => {
                               InputProps={{
                                 ...params.InputProps,
                                 disableUnderline: true,
-
                               }}
-                              style={{fontFamily:"Poppins"}}
+                              style={{ fontFamily: "Poppins" }}
                             />
                           )}
                         />
@@ -1182,7 +1198,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
                               textAlign: "center",
-                              fontFamily:"Poppins"
+                              fontFamily: "Poppins",
                             },
                           }}
                           style={{
@@ -1260,7 +1276,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
                               textAlign: "center",
-                              fontFamily:"Poppins"
+                              fontFamily: "Poppins",
                             },
                           }}
                           style={{
@@ -1323,7 +1339,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
                               textAlign: "center",
-                              fontFamily:"Poppins"
+                              fontFamily: "Poppins",
                             },
                           }}
                           style={{
@@ -1404,7 +1420,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
                               textAlign: "center",
-                              fontFamily:"Poppins"
+                              fontFamily: "Poppins",
                             },
                           }}
                           style={{
@@ -1468,7 +1484,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
                               textAlign: "center",
-                              fontFamily:"Poppins"
+                              fontFamily: "Poppins",
                             },
                           }}
                           style={{
@@ -1546,7 +1562,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
                               textAlign: "center",
-                              fontFamily:"Poppins"
+                              fontFamily: "Poppins",
                             },
                           }}
                           style={{
@@ -1602,7 +1618,7 @@ const DugOutLineup = () => {
                             "& .MuiAutocomplete-input": {
                               // color: configuration.cellboxTextColor,
                               textAlign: "center",
-                              fontFamily:"Poppins"
+                              fontFamily: "Poppins",
                             },
                           }}
                           style={{

@@ -37,6 +37,7 @@ $primary-color: #850037;
   border-bottom: 1px solid #ffebeb;
   font-weight: bold;
   color:$primary-color;
+  font-family: "Poppins";
 
   img {
     width: 25px;
@@ -69,6 +70,7 @@ $primary-color: #850037;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
+ 
 }
 
 //modal
